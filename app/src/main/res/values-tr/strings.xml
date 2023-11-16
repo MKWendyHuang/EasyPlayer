@@ -2,7 +2,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <string name="action_settings">Ayarlar</string>
-
+    <string name="game_view_content_description">Game view</string>
     <string name="accessibility_play">Oynat</string>
     <string name="accessibility_pause">Durdur</string>
     <string name="accessibility_next">İleri</string>

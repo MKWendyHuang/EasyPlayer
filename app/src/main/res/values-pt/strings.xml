@@ -2,7 +2,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <string name="action_settings">Definições</string>
-
+    <string name="game_view_content_description">Game view</string>
     <string name="accessibility_play">Reproduzir</string>
     <string name="accessibility_pause">Pausa</string>
     <string name="accessibility_next">Seguinte</string>

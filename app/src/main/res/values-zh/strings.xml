@@ -3,7 +3,7 @@
 
     <string name="app_name">Timber</string>
     <string name="action_settings">设置</string>
-
+    <string name="game_view_content_description">Game view</string>
     <string name="accessibility_play">播放</string>
     <string name="accessibility_pause">暂停</string>
     <string name="accessibility_next">下一首</string>

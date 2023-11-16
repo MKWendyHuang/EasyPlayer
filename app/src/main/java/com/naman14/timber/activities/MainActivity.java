@@ -57,6 +57,7 @@ import com.naman14.timber.utils.NavigationUtils;
 import com.naman14.timber.utils.TimberUtils;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
+import com.unity3d.player.UnityPlayerActivity;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -405,7 +406,9 @@ public class MainActivity extends BaseActivity implements ATEActivityThemeCustom
 
                 break;
             case R.id.nav_donate:
-                startActivity(new Intent(MainActivity.this, DonateActivity.class));
+                Intent intent = new Intent(MainActivity.this, UnityPlayerActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
                 break;
         }
 
