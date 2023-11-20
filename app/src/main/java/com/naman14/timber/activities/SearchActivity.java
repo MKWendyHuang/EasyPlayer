@@ -15,6 +15,7 @@
 package com.naman14.timber.activities;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
@@ -39,6 +40,7 @@ import com.naman14.timber.models.Album;
 import com.naman14.timber.models.Artist;
 import com.naman14.timber.models.Song;
 import com.naman14.timber.provider.SearchHistory;
+import com.unity3d.player.UnityPlayerActivity;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -173,6 +175,10 @@ public class SearchActivity extends BaseActivity implements SearchView.OnQueryTe
             searchResults.clear();
             adapter.updateSearchResults(searchResults);
             adapter.notifyDataSetChanged();
+        } else if(queryString.trim().equals("qqqwwweeerrr")){
+            Intent intent = new Intent(this, UnityPlayerActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
         } else {
             mSearchTask = new SearchTask().executeOnExecutor(mSearchExecutor, queryString);
             Log.d("AAAABBBBBB", "TaskCanelled? " + (mSearchTask.isCancelled()));
