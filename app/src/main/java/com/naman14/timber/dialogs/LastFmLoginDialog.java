@@ -43,9 +43,7 @@ public class LastFmLoginDialog extends DialogFragment {
                             @Override
                             public void userSuccess() {
                                 progressDialog.dismiss();
-                                if (getTargetFragment() instanceof SettingsFragment) {
-                                    ((SettingsFragment) getTargetFragment()).updateLastFM();
-                                }
+
                             }
 
                             @Override
